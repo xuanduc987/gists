@@ -24,6 +24,7 @@ or, Values as Exceptions
 
 
 <a name="either"/>
+
 ### Either Left or Right
 
 Before we break into the mysterious world of monad transformers, I want to
@@ -164,6 +165,7 @@ pattern matching hidden inside the call to `either`.
 
 
 <a name="side-effects"/>
+
 ### Introducing Side-Effects
 
 Now we'll use the domain as some sort of "user token" – a value the user
@@ -264,6 +266,7 @@ Too good to be true? Read on and find out.
 
 
 <a name="either-io"/>
+
 ### We Can Make Our Own Monads
 
 We keep coming across the `IO (Either e a)` type, so maybe there is something
@@ -291,6 +294,7 @@ we used previously! That's *gotta* be useful somehow.
 
 
 <a name="type-classes"/>
+
 ### Implementing Instances for Common Typeclasses
 
 This section might be a little difficult if you're new to the language and
