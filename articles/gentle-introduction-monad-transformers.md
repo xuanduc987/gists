@@ -363,6 +363,7 @@ as long as all are correct.
 
 
 <a name="using"/>
+
 ### Using `EitherIO`
 
 Now that our `EitherIO` type is a real monad, we'll try to put it to work!
@@ -430,6 +431,7 @@ detour to clean this up slightly.
 
 
 <a name="lifting"/>
+
 ### Do You Even Lift?
 
 The more general pattern here is that we have two kinds of functions: Those
@@ -534,6 +536,7 @@ takes care of `IO` actions.
 
 
 <a name="throwing"/>
+
 ### Signalling Errors
 
 But how *are* we signalling errors, really? It turns out that to signal
@@ -566,6 +569,7 @@ userLogin = do
 ```
 
 <a name="java"/>
+
 ### `throwE`? What Is This, Java?
 
 No, of course not. But I did choose that name deliberately. What we have with
@@ -580,6 +584,7 @@ type system, so we can't forget to catch our exceptions.
 
 
 <a name="except-io">
+
 ### `ExceptIO`
 
 But let's entertain that idea further. What happens if we just say goodbye to
@@ -597,6 +602,7 @@ be changed throughout the code, but other than that, the code still works.
 
 
 <a name="catch"/>
+
 ### Gotta Catch 'Em All
 
 So if we can *throw* what basically amounts to exceptions...
@@ -677,6 +683,7 @@ expect them to catch exceptions from underneath each other.
 
 
 <a name="transformer"/>
+
 ### Going General
 
 There is just one, tiny, little thing I want to change in our `ExceptIO` type.
@@ -698,6 +705,7 @@ curious how something works!
 
 
 <a name="code"/>
+
 ### Appendix A: Complete Program
 
 
